@@ -8,6 +8,7 @@ import java.util.Set;
 
 @Data
 public class PostDto {
+
     private long id;
 
     // title should not be null  or empty
@@ -26,6 +27,7 @@ public class PostDto {
     @NotEmpty
     private String content;
     private Set<CommentDto> comments;
+
 
     private Long categoryId;
 }

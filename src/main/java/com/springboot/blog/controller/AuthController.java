@@ -32,6 +32,7 @@ public class AuthController {
         return ResponseEntity.ok(jwtAuthResponse);
     }
 
+
     // Build Register REST API
     @PostMapping(value = {"/register", "/signup"})
     public ResponseEntity<String> register(@RequestBody RegisterDto registerDto){

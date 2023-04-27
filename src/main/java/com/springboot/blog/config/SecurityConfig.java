@@ -38,6 +38,7 @@ public class SecurityConfig {
         this.authenticationFilter = authenticationFilter;
     }
 
+
     @Bean
     public static PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
